@@ -6,5 +6,5 @@ This repository is my solutions, organised in <year>/<day> folders
 
 To start a new day, run:
 ```bash
-mkdir 2016/4 && cd 2016/4 && touch {silver.rb,input.txt,example.txt,readme.md}
+mkdir -p `date '+%Y/%-d'` && cd `date '+%Y/%-d'` && touch {silver.rb,input.txt,example.txt,readme.md}
 ```
