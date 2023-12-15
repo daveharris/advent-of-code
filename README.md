@@ -8,3 +8,7 @@ To start a new day, run:
 ```bash
 mkdir -p `date '+%Y/%-d'` && cd `date '+%Y/%-d'` && touch {silver.rb,input.txt,example.txt,readme.md}
 ```
+or:
+```bash
+cp -r . ../2 && truncate -s 0 ../2/*
+```
