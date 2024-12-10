@@ -1,4 +1,4 @@
-lines = File.readlines('sample.txt').map(&:strip)
+lines = File.readlines('input.txt').map(&:strip)
 sum = 0
 
 lines.each do |line|

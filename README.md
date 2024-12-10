@@ -6,9 +6,9 @@ This repository is my solutions, organised in <year>/<day> folders
 
 To start a new day, run:
 ```bash
-mkdir -p `date '+%Y/%-d'` && cd `date '+%Y/%-d'` && touch {silver.rb,input.txt,example.txt,readme.md}
+mkdir -p `date '+%Y/%-d'` && cd `date '+%Y/%-d'` && touch {a.rb,b.rb,input.txt,example.txt}
 ```
 or:
 ```bash
-cp -r . ../2 && truncate -s 0 ../2/*
+read DAY\?"Day: " && cp -r . ../$DAY && cd ../$DAY && truncate -s 0 * && echo "require 'debug'\n\nlines = File.readlines('example.txt').map(&:strip)\n" > *.rb
 ```
